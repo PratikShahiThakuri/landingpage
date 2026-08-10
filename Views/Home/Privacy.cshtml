@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div style="max-width: 800px; margin: 4rem auto; padding: 2rem; font-family: var(--font-sans); color: var(--ink);">
+    <h1 style="font-family: var(--font-serif); margin-bottom: 1.5rem;">Privacy Policy</h1>
+    
+    <p style="margin-bottom: 1rem;"><strong>Effective Date:</strong> @DateTime.Now.ToString("MMMM dd, yyyy")</p>
+
+    <p style="margin-bottom: 1rem;">At ReactiveForm, we prioritize your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, and safeguard your information when you interact with our platform.</p>
+
+    <h2 style="font-family: var(--font-serif); margin-top: 2rem; margin-bottom: 1rem;">1. Information We Collect</h2>
+    <p style="margin-bottom: 1rem;">We collect information you provide directly to us, such as when you request early access to our private beta or contact our development team. This typically includes your corporate email address.</p>
+
+    <h2 style="font-family: var(--font-serif); margin-top: 2rem; margin-bottom: 1rem;">2. How We Use Your Information</h2>
+    <p style="margin-bottom: 1rem;">Your email address is strictly used to:</p>
+    <ul style="margin-bottom: 1rem; padding-left: 2rem;">
+        <li>Communicate updates regarding the ReactiveForm private beta.</li>
+        <li>Respond to direct inquiries or support requests.</li>
+        <li>Improve our platform based on your feedback.</li>
+    </ul>
+
+    <h2 style="font-family: var(--font-serif); margin-top: 2rem; margin-bottom: 1rem;">3. Data Security and Isolation</h2>
+    <p style="margin-bottom: 1rem;">We implement enterprise-grade security measures to protect your data. In alignment with our product philosophy, internal data streams are isolated. We do not sell, rent, or lease your personal information to third parties.</p>
+
+    <h2 style="font-family: var(--font-serif); margin-top: 2rem; margin-bottom: 1rem;">4. Your Rights</h2>
+    <p style="margin-bottom: 1rem;">You have the right to request access to, correction of, or deletion of your personal data at any time. To exercise these rights, please contact us at <a href="mailto:admin@reactiveform.com" style="color: var(--ink); text-decoration: underline;">admin@reactiveform.com</a>.</p>
+
+    <div style="margin-top: 4rem;">
+        <a href="@Url.Action("Index", "Home")" class="btn btn--submit" style="display: inline-block; padding: 1rem 2rem; background: var(--ink); color: var(--white); text-decoration: none; font-family: var(--font-sans);">&larr; Return Home</a>
+    </div>
+</div>
