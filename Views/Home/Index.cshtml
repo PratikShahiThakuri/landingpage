@@ -1,0 +1,444 @@
+@{
+    ViewData["Title"] = "Enterprise Form Automation & Submission Routing";
+}
+
+<div class="parallax-wrapper" id="main-content">
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero parallax-group" aria-labelledby="hero-heading">
+            <div class="parallax-layer-back garden-bg" aria-hidden="true"></div>
+
+            <div class="hero__inner container">
+                <div class="hero__content">
+                    <div class="hero__eyebrow">
+                        <span class="mono-label mono-label--box">PRE-RELEASE ARCHITECTURE SPECIFICATION</span>
+                    </div>
+
+                    <h1 id="hero-heading" class="hero__h1">
+                        Enterprise Form Automation &amp; Submission Routing.
+                    </h1>
+
+                    <p class="hero__subtitle">
+                        A unified architecture for dynamic data collection, automated workflows, and isolated CRM pipelines.
+                    </p>
+
+                    <div class="hero__form-wrap">
+                        <form id="hero-form" class="cta-form" novalidate aria-label="Join private beta form">
+                            <div class="cta-form__row">
+                                <label for="hero-email" class="sr-only">Work email address</label>
+                                <input
+                                    type="email"
+                                    id="hero-email"
+                                    name="email"
+                                    class="input"
+                                    placeholder="Corporate Email Address"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="hero-feedback"
+                                    autocomplete="email"
+                                />
+                                <button type="submit" id="hero-submit" class="btn btn--submit" disabled>
+                                    Join Private Beta
+                                </button>
+                            </div>
+                            <div id="hero-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
+
+                    <p class="hero__microcopy">
+                        Role-Gated Workspace Isolation &bull; SOC2 Architecture Ready &bull; Zero Credit Card Required
+                    </p>
+                </div>
+
+                <!-- Architecture Overview Cards -->
+                <div class="hero__canvas" aria-label="Architecture overview">
+                    <div class="hero__canvas-bg garden-bg" aria-hidden="true"></div>
+                    <div class="frosted-overlay">
+                        <div class="hero__cards">
+
+                            <article class="hero-card hero-card--left">
+                                <h3 class="hero-card__title">Form Builder</h3>
+                                <p class="hero-card__desc">Drag-and-drop schema generation.</p>
+                            </article>
+
+                            <article class="hero-card hero-card--center">
+                                <h3 class="hero-card__title">Stage Pipeline</h3>
+                                <p class="hero-card__desc">Automated state transitions &amp; routing.</p>
+                            </article>
+
+                            <article class="hero-card hero-card--right">
+                                <h3 class="hero-card__title">Isolated Workspaces</h3>
+                                <p class="hero-card__desc">Granular RBAC tenant segmentation.</p>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Bar -->
+        <section class="trust-bar parallax-group" aria-label="Platform reliability metrics">
+            <div class="trust-bar__inner container">
+                <div class="trust-bar__grid">
+                    <div class="trust-item">
+                        <span class="trust-item__metric font-serif">100%</span>
+                        <span class="trust-item__label">Tenant Data Segregation</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-item__metric font-serif">SOC2</span>
+                        <span class="trust-item__label">Compliance Architecture</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-item__metric font-serif">RBAC</span>
+                        <span class="trust-item__label">Granular Role Isolation</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-item__metric font-serif">99.99%</span>
+                        <span class="trust-item__label">Target Uptime SLA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem / Solution -->
+        <section class="problem-solution parallax-group" aria-labelledby="problem-heading">
+            <div class="container">
+                <div class="problem-solution__grid">
+
+                    <div>
+                        <div class="problem-block__label">
+                            <span class="mono-label mono-label--bordered">The Problem</span>
+                        </div>
+                        <h2 id="problem-heading" class="problem-block__h2">
+                            Fragmented data and exposed operations.
+                        </h2>
+                        <p class="problem-block__body">
+                            Rigid custom code and spreadsheet-based CRMs create operational chaos. Workflows are manual, disconnected, and difficult to scale.
+                        </p>
+                        <p class="problem-block__body">
+                            Worse, bringing clients and staff into the same platform creates risky visibility boundaries, exposing sensitive internal processes.
+                        </p>
+                    </div>
+
+                    <div class="wireframe-card solution-card">
+                        <div class="solution-card__label">
+                            <span class="mono-label mono-label--bordered">The Transformation</span>
+                        </div>
+                        <h2 class="solution-card__h2">
+                            An adaptable, secure architecture.
+                        </h2>
+                        <p class="solution-card__body">
+                            ReactiveForm provides a clear, secure operational baseline. Custom forms and workflows operate efficiently inside explicitly defined lanes.
+                        </p>
+                        <p class="solution-card__body">
+                            Role isolation and strict tenant segregation keep your data ordered and protected, separating Administrative Builders, Staff Operations, and Client portals seamlessly.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Features & Benefits -->
+        <section class="features parallax-group" aria-labelledby="features-heading">
+            <div class="container">
+                <div class="features__stack">
+
+                    <!-- Feature 1: Form Engine -->
+                    <article class="feature-row">
+                        <div class="feature-row__visual">
+                            <div class="wireframe-card feature-diagram">
+                                <form class="diagram-form" aria-hidden="true" tabindex="-1">
+                                    <fieldset disabled class="diagram-fieldset">
+                                        <div class="diagram-input-group">
+                                            <div class="diagram-input-stub diagram-input-stub--text"></div>
+                                        </div>
+                                        <div class="diagram-input-group">
+                                            <div class="diagram-input-stub diagram-input-stub--textarea"></div>
+                                        </div>
+                                        <div class="diagram-input-group">
+                                            <div class="diagram-input-stub diagram-input-stub--checkbox">
+                                                <span class="diagram-checkbox"></span>
+                                                <span class="diagram-checkbox-label"></span>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="feature-row__copy">
+                            <h2 class="feature-copy__h2">Drag-and-Drop Dynamic Form Engine</h2>
+                            <p class="feature-copy__body">
+                                Architect complex, multi-step forms in minutes. Leverage powerful conditional logic and dynamic schema validation to capture the exact data your business requires.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Feature 2: Pipeline Tracker -->
+                    <article class="feature-row feature-row--reverse">
+                        <div class="feature-row__visual">
+                            <div class="wireframe-card feature-diagram">
+                                <ol class="diagram-pipeline" aria-hidden="true">
+                                    <li class="diagram-stage">NEW_LEAD</li>
+                                    <li class="diagram-stage">QUALIFICATION</li>
+                                    <li class="diagram-stage diagram-stage--active">CLOSED_WON</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="feature-row__copy">
+                            <h2 class="feature-copy__h2">Embedded Submission CRM &amp; Pipeline Tracker</h2>
+                            <p class="feature-copy__body">
+                                Submissions flow directly into automated stage routing. Manage tickets, track deals, and maintain complete pipeline snapshots without leaving the ecosystem.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Feature 3: Workspaces -->
+                    <article class="feature-row">
+                        <div class="feature-row__visual">
+                            <div class="wireframe-card feature-diagram">
+                                <ul class="diagram-roles" aria-hidden="true">
+                                    <li class="diagram-role"><span>ADMIN</span></li>
+                                    <li class="diagram-role diagram-role--active"><span>STAFF</span></li>
+                                    <li class="diagram-role"><span>CLIENT</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-row__copy">
+                            <h2 class="feature-copy__h2">Role-Isolated Workspaces</h2>
+                            <p class="feature-copy__body">
+                                Strict segregation protects your data. The Administrative Builder configures, the Staff Workflow Engine reviews, and the Isolated Client Portal tracks&mdash;all in secure harmony.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Visualizer -->
+        <section class="visualizer parallax-group" aria-labelledby="visualizer-heading">
+            <div class="parallax-layer-back garden-bg" style="opacity:0.9;" aria-hidden="true"></div>
+
+            <div class="visualizer__inner container">
+                <div class="visualizer__header">
+                    <h2 id="visualizer-heading" class="visualizer__h2">Isolated Data Pipeline</h2>
+                    <p class="visualizer__sub">A single submission flowing calmly through isolated structural zones.</p>
+                </div>
+
+                <div class="visualizer__bar wireframe-card frosted-overlay">
+                    <div class="visualizer__connector" aria-hidden="true"></div>
+                    <div class="visualizer__lanes">
+
+                        <div class="lane-card wireframe-card lane-card--light">
+                            <p class="lane-card__zone">ADMIN ZONE</p>
+                            <h3 class="lane-card__title">Schema Config</h3>
+                            <p class="lane-card__desc">Defining the forms and pipeline rules.</p>
+                        </div>
+
+                        <div class="visualizer__spacer" aria-hidden="true"></div>
+
+                        <div class="lane-card wireframe-card--dark lane-card--dark">
+                            <p class="lane-card__zone">STAFF ZONE</p>
+                            <h3 class="lane-card__title">Pipeline Review</h3>
+                            <p class="lane-card__desc">Processing logic, internal comments, and routing.</p>
+                        </div>
+
+                        <div class="visualizer__spacer" aria-hidden="true"></div>
+
+                        <div class="lane-card wireframe-card lane-card--light">
+                            <p class="lane-card__zone">CLIENT ZONE</p>
+                            <h3 class="lane-card__title">Status Portal</h3>
+                            <p class="lane-card__desc">Secure visibility into submission progress.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq parallax-group" aria-labelledby="faq-heading">
+            <div class="container container--md">
+                <h2 id="faq-heading" class="faq__h2">Implementation Queries</h2>
+                <ul class="faq__list" role="list">
+
+                    <li class="faq-item wireframe-card">
+                        <div class="faq-item__header">
+                            <h3 class="faq-item__q">When is the private beta launching?</h3>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </div>
+                        <p class="faq-item__a">
+                            We are onboarding a limited Q4 cohort. Access is restricted to ensure direct communication with our engineering team for early architecture feedback.
+                        </p>
+                    </li>
+
+                    <li class="faq-item wireframe-card">
+                        <div class="faq-item__header">
+                            <h3 class="faq-item__q">How does workspace role isolation work?</h3>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </div>
+                        <p class="faq-item__a">
+                            The platform logically partitions data into three lanes: Administration, Staff, and Client. Each lane has dedicated access boundaries ensuring clients only see their submissions, and staff operate securely without exposing internal workflows.
+                        </p>
+                    </li>
+
+                    <li class="faq-item wireframe-card">
+                        <div class="faq-item__header">
+                            <h3 class="faq-item__q">Can ReactiveForm be deployed on-premises?</h3>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </div>
+                        <p class="faq-item__a">
+                            Enterprise deployment options including VPC peering, private cloud, and on-premises installation are available by request for compliance-heavy organizations.
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta parallax-group" id="final-cta" aria-labelledby="cta-heading">
+            <div class="container container--md">
+                <div class="wireframe-card final-cta__box">
+                    <div class="final-cta__garden garden-bg" aria-hidden="true"></div>
+                    <div class="final-cta__inner">
+                        <h2 id="cta-heading" class="final-cta__h2">Deploy your operational pipeline.</h2>
+                        <p class="final-cta__sub">
+                            Architect dynamic forms, automate pipelines, and isolate your workspaces today.
+                        </p>
+
+                        <div class="final-cta__form-wrap">
+                            <form id="final-form" class="cta-form" novalidate aria-label="Request architecture access form">
+                                <div class="cta-form__row">
+                                    <label for="final-email" class="sr-only">Work email address</label>
+                                    <input
+                                        type="email"
+                                        id="final-email"
+                                        name="email"
+                                        class="input"
+                                        placeholder="Request Architecture Access"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="final-feedback"
+                                        autocomplete="email"
+                                    />
+                                    <button type="submit" id="final-submit" class="btn btn--submit" disabled>
+                                        Connect with the Team
+                                    </button>
+                                </div>
+                                <div id="final-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+                            </form>
+                        </div>
+
+                        <p class="final-cta__reassurance">
+                            Direct communication with the development team &bull; Architecture-first conversations &bull; No marketing noise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+            <p class="footer__status">ReactiveForm Platform &mdash; In Active Development.</p>
+            <div class="footer__right">
+                <span>&copy; @DateTime.Now.Year ReactiveForm</span>
+                <a href="@Url.Action("Privacy", "Home")" class="footer__link">Privacy Policy</a>
+                <a href="mailto:admin@reactiveform.com" class="footer__link">Developer Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</div><!-- /.parallax-wrapper -->
+
+@section Scripts {
+    <script>
+    (function () {
+        'use strict';
+
+        function setupFormHandler(formId, inputId, feedbackId, submitId, endpointUrl) {
+            const form = document.getElementById(formId);
+            const input = document.getElementById(inputId);
+            const feedback = document.getElementById(feedbackId);
+            const submitBtn = document.getElementById(submitId);
+
+            if (!form || !input || !feedback || !submitBtn) return;
+
+            input.addEventListener('input', function () {
+                const val = input.value.trim();
+                submitBtn.disabled = (val.length === 0);
+                input.removeAttribute('aria-invalid');
+                feedback.className = 'form-feedback';
+                feedback.textContent = '';
+            });
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                const email = input.value.trim();
+                if (!email) return;
+
+                submitBtn.disabled = true;
+                submitBtn.setAttribute('aria-busy', 'true');
+                feedback.className = 'form-feedback';
+                feedback.textContent = 'Submitting...';
+
+                try {
+                    const response = await fetch(endpointUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ email: email })
+                    });
+
+                    let data = null;
+                    try {
+                        data = await response.json();
+                    } catch (parseErr) { }
+
+                    if (response.ok && data && data.success) {
+                        input.setAttribute('aria-invalid', 'false');
+                        feedback.className = 'form-feedback form-feedback--success';
+                        feedback.textContent = data.message || '✓ Request submitted! We will be in touch.';
+                        form.reset();
+                        submitBtn.disabled = true;
+                    } else {
+                        input.setAttribute('aria-invalid', 'true');
+                        feedback.className = 'form-feedback form-feedback--error';
+                        let errorMsg = 'Validation failed.';
+                        if (data) {
+                            if (data.errors && data.errors.length > 0) {
+                                errorMsg = data.errors[0];
+                            } else if (data.message) {
+                                errorMsg = data.message;
+                            }
+                        }
+                        feedback.textContent = '✕ ' + errorMsg;
+                        submitBtn.disabled = false;
+                    }
+                } catch (err) {
+                    input.setAttribute('aria-invalid', 'true');
+                    feedback.className = 'form-feedback form-feedback--error';
+                    feedback.textContent = '✕ An error occurred. Please try again.';
+                    submitBtn.disabled = false;
+                } finally {
+                    submitBtn.removeAttribute('aria-busy');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            setupFormHandler('hero-form', 'hero-email', 'hero-feedback', 'hero-submit', '/Form/SubmitJoinBeta');
+            setupFormHandler('final-form', 'final-email', 'final-feedback', 'final-submit', '/Form/ConnectTeam');
+        });
+    })();
+    </script>
+}

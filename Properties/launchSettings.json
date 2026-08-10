@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "landingmvc": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:52578;http://localhost:52579"
+    }
+  }
+}
