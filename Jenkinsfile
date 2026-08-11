@@ -18,7 +18,7 @@ pipeline {
                 // Inject the managed JSON file into the workspace
                 // The deployment script MUST run inside this block because the plugin 
                 // automatically deletes the secure file as soon as the block exits!
-                configFileProvider([configFile(fileId: 'landinggooglejson', targetLocation: 'appsettings.json')]) {
+                configFileProvider([configFile(fileId: 'landinggooglejson', targetLocation: 'google-credentials.json')]) {
                     sh 'chmod +x ci/run.sh'
                     sh './ci/run.sh'
                 }
