@@ -16,12 +16,10 @@ pipeline {
             steps {
                 echo 'Pulling secure JsonConfig and running deployment...'
                 // Inject the managed JSON file into the workspace
-                // The deployment script MUST run inside this block because the plugin 
-                // automatically deletes the secure file as soon as the block exits!
-                configFileProvider([configFile(fileId: 'landinggooglejson', targetLocation: 'google-credentials.json'){
-                withCredentials([string(credentialsId: 'GOOGLE_SHEET_ID', variable: 'SPREADSHEET_ID')]) {
-                    sh 'chmod +x ci/run.sh'
-                    sh './ci/run.sh'
+                configFileProvider([configFile(fileId: 'landinggooglejson', targetLocation: 'google-credentials.json')]) {
+                    withCredentials([string(credentialsId: 'GOOGLE_SHEET_ID', variable: 'SPREADSHEET_ID')]) {
+                        sh 'chmod +x ci/run.sh'
+                        sh './ci/run.sh'
                     }
                 }
             }
