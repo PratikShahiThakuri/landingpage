@@ -18,9 +18,9 @@ echo "Using image tag: ${COMMIT} (branch=${BRANCH}, env=${TARGET_ENV})"
 
 # ==== PORTS ====
 if [ "$TARGET_ENV" = "prod" ]; then
-  PORT_WEB=5000
+  PORT_WEB=5050
 else
-  PORT_WEB=5200
+  PORT_WEB=5250
 fi
 
 # ==== VARS ====
