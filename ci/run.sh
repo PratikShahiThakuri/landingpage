@@ -57,11 +57,13 @@ echo "== Starting ${CONTAINER_NAME} on port ${PORT_WEB} =="
 docker create --restart unless-stopped --name "$CONTAINER_NAME" --network "$NETWORK" \
   -e ASPNETCORE_ENVIRONMENT=Production \
   -e ASPNETCORE_URLS="http://+:80" \
+  -e GOOGLE_SHEETS_CREDENTIALS_PATH="/app/google-credentials.json" \
+  -e GOOGLE_SHEETS_SPREADSHEET_ID="${SPREADSHEET_ID}" \
   -p ${PORT_WEB}:80 \
   ${IMAGE_NAME}:${COMMIT}
 
-# Copy the secure appsettings.json file directly into the container's file system
-docker cp "$WORKSPACE/appsettings.json" "$CONTAINER_NAME:/app/appsettings.json"
+# Copy the secure google-credentials.json file directly into the container's file system
+docker cp "$WORKSPACE/google-credentials.json" "$CONTAINER_NAME:/app/google-credentials.json"
 
 # Start the container
 docker start "$CONTAINER_NAME"
