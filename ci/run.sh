@@ -58,7 +58,7 @@ docker create --restart unless-stopped --name "$CONTAINER_NAME" --network "$NETW
   -e ASPNETCORE_ENVIRONMENT=Production \
   -e ASPNETCORE_URLS="http://+:80" \
   -e GOOGLE_SHEETS_CREDENTIALS_PATH="/app/google-credentials.json" \
-  -e GOOGLE_SHEETS_SPREADSHEET_ID="${GOOGLE_SHEET_ID:-}" \
+  -e GOOGLE_SHEETS_SPREADSHEET_ID="${SPREADSHEET_ID}" \
   -p ${PORT_WEB}:80 \
   ${IMAGE_NAME}:${COMMIT}
 
