@@ -21,11 +21,11 @@ public class GoogleSheetsService : IGoogleSheetsService
 
     public async Task<bool> AppendSubmissionAsync(string formType, string email, string? name, string? message)
     {
-        string? spreadsheetId = _configuration["GoogleSheets:SpreadsheetId"]
-            ?? Environment.GetEnvironmentVariable("GOOGLE_SHEETS_SPREADSHEET_ID");
+        string? spreadsheetId = Environment.GetEnvironmentVariable("GOOGLE_SHEETS_SPREADSHEET_ID")
+      ?? _configuration["GoogleSheets:SpreadsheetId"];
 
-        string? jsonCredentialsPath = _configuration["GoogleSheets:CredentialsPath"]
-            ?? Environment.GetEnvironmentVariable("GOOGLE_SHEETS_CREDENTIALS_PATH");
+        string? jsonCredentialsPath = Environment.GetEnvironmentVariable("GOOGLE_SHEETS_CREDENTIALS_PATH")
+            ?? _configuration["GoogleSheets:CredentialsPath"];
 
         if (string.IsNullOrWhiteSpace(spreadsheetId) || string.IsNullOrWhiteSpace(jsonCredentialsPath))
         {
