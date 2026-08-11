@@ -50,11 +50,20 @@ docker rm -f "$CONTAINER_NAME" >/dev/null 2>&1 || true
 
 # ===== Start new container =====
 echo "== Starting ${CONTAINER_NAME} on port ${PORT_WEB} =="
-docker run -d --restart unless-stopped --name "$CONTAINER_NAME" --network "$NETWORK" \
+
+# We use docker create + docker cp + docker start instead of -v volume mounting
+# This fixes the "Are you trying to mount a directory onto a file" error caused by 
+# Docker-in-Docker path mapping mismatches on the Jenkins agent.
+docker create --restart unless-stopped --name "$CONTAINER_NAME" --network "$NETWORK" \
   -e ASPNETCORE_ENVIRONMENT=Production \
   -e ASPNETCORE_URLS="http://+:80" \
-  -v "$WORKSPACE/appsettings.json:/app/appsettings.json:ro" \
   -p ${PORT_WEB}:80 \
   ${IMAGE_NAME}:${COMMIT}
+
+# Copy the secure appsettings.json file directly into the container's file system
+docker cp "$WORKSPACE/appsettings.json" "$CONTAINER_NAME:/app/appsettings.json"
+
+# Start the container
+docker start "$CONTAINER_NAME"
 
 echo "✅ Deployment successful. Container $CONTAINER_NAME is running on port ${PORT_WEB}."
