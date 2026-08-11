@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'built-in' }
+    agent { label 'docker-agent' }
 
     environment {
         TARGET_ENV = 'prod'
